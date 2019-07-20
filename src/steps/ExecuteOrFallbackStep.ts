@@ -8,6 +8,11 @@ type StepOptions<TState> = {
     fallback: FallbackFunction<TState>;
 }
 
+/**
+ * Attempts to execute a function to transform the state.
+ * If the `execute` function returns `undefined`, the output from the
+ * `fallback` function is returned instead.
+ */
 export class ExecuteOrFallbackStep<TState> extends ExecuteStep<TState> {
     name: string;
     private fallback: FallbackFunction<TState>;

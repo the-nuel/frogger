@@ -7,6 +7,10 @@ export default class Sequence<TState> {
         this.steps = steps;
     }
 
+    /**
+     * Runs the sequence of steps in order.
+     * @param state the initial state
+     */
     async run(state: TState) {
         for(const step of this.steps) {
             state = await step.run(state);
