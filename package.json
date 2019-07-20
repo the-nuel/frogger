@@ -4,7 +4,7 @@
   "files": [
     "lib"
   ],
-  "description": "Forward. Forward. Left. Forward. Dead.",
+  "description": "Chains together a sequence of async tasks.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "author": "Tom Davies <tom@thenuel.com>",
   "license": "MIT",
+  "repository": "github:the-nuel/frogger",
   "devDependencies": {
     "@nuel/uniformly": "^2.0.0"
   },
