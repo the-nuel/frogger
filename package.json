@@ -10,16 +10,15 @@
   "scripts": {
     "prebuild": "rm -rf lib/",
     "build": "uniformly build",
-    "postbuild": "npm run generate-types",
+    "postbuild": "uniformly declare-types",
     "test": "uniformly test",
-    "generate-types": "tsc -d --declarationDir lib --emitDeclarationOnly",
     "prepare": "npm run build"
   },
   "author": "Tom Davies <tom@thenuel.com>",
   "license": "MIT",
   "repository": "github:the-nuel/frogger",
   "devDependencies": {
-    "@nuel/uniformly": "^2.0.0"
+    "@nuel/uniformly": "^2.1.0"
   },
   "dependencies": {
     "@types/node": "^12.6.8"
