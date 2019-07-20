@@ -6,14 +6,21 @@
   ],
   "description": "Forward. Forward. Left. Forward. Dead.",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
+    "prebuild": "rm -rf lib/",
     "build": "uniformly build",
+    "postbuild": "npm run generate-types",
     "test": "uniformly test",
-    "prepare": "rm -rf lib/ && npm run build"
+    "generate-types": "tsc -d --declarationDir lib --emitDeclarationOnly",
+    "prepare": "npm run build"
   },
   "author": "Tom Davies <tom@thenuel.com>",
   "license": "MIT",
   "devDependencies": {
     "@nuel/uniformly": "^2.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^12.6.8"
   }
 }

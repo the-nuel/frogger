@@ -1,2 +1,3 @@
 export { Step } from './Step';
-export { ExecuteStep, ExecuteOrFallbackStep } from './steps';
+export { ExecuteStep } from './ExecuteStep';
+export { ExecuteOrFallbackStep } from './ExecuteOrFallbackStep';

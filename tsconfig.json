@@ -1,4 +1,8 @@
 {
-    "declaration": true,
-    "declarationDir": "lib"
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "src/**/__tests__/*.ts"
+    ]
 }
