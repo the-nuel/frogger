@@ -1,0 +1,19 @@
+{
+  "name": "@nuel/frogger",
+  "version": "1.0.0",
+  "files": [
+    "lib"
+  ],
+  "description": "Forward. Forward. Left. Forward. Dead.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "uniformly build",
+    "test": "uniformly test",
+    "prepare": "rm -rf lib/ && npm run build"
+  },
+  "author": "Tom Davies <tom@thenuel.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@nuel/uniformly": "^2.0.0"
+  }
+}
